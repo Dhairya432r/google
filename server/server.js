@@ -89,10 +89,7 @@ app.post('/api/user', async (req, res) => {
     }
 });
 
-//heroku
-if(process.env.NODE_ENV == "production") {
-app.use(express.static("google/build"));    
-}
+
 
 
 app.listen(5000, () => {
